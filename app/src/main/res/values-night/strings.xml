@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Password">Contraseña</string>
+    <string name="iniciar_con_google">Iniciar con Google</string>
+    <string name="Config">Configuración</string>
+</resources>
