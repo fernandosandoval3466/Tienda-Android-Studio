@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaVirtual"
-        tools:targetApi="31">
+        >
         <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">
@@ -25,10 +25,9 @@
             android:exported="false"/>
         <activity android:name=".Activities.LoginActivity"
             android:exported="false"/>
-        <activity android:name=".Activities.RegisterActivity"
-            android:exported="false"/>
         <activity android:name=".Activities.ProductActivity"
             android:exported="false"/>
-    </application>
+
+        </application>
 
 </manifest>

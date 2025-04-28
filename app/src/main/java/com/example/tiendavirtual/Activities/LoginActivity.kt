@@ -8,14 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.tiendavirtual.R
 
 class LoginActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        var btnlogin = findViewById<Button>(R.id.btnlogin)
-        btnlogin.setOnClickListener {
+        var btn_login = findViewById<Button>(R.id.btnlogin)
+        btn_login.setOnClickListener {
             val intent = Intent(this, ProductActivity::class.java)
             startActivity(intent)
             finish()
-    }
-}}
+        }
+}
+}

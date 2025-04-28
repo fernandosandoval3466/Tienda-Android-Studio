@@ -2,52 +2,56 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/blue">
-
 
     <Button
         android:id="@+id/user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/blue"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="658dp"
+        android:backgroundTint="@color/blue1"
+        android:text="@string/usuario"
+        android:textColor="@color/black"
         app:icon="@drawable/btn_user"
-        app:layout_constraintBottom_toTopOf="@+id/Lista_productos"
-        app:layout_constraintEnd_toStartOf="@+id/shop"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="User" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/shop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/blue"
-        android:text="Cart"
+        android:id="@+id/Cart"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="658dp"
+        android:backgroundTint="@color/blue1"
+        android:text="@string/carrito"
+        android:textColor="@color/black"
         app:icon="@drawable/shoplist"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="309dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ListView
-        android:id="@+id/Lista_productos"
-        android:layout_width="373dp"
-        android:layout_height="670dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="55dp"
+        android:id="@+id/listap"
+        android:layout_width="409dp"
+        android:layout_height="654dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@android:layout/simple_list_item_1" />
+        app:layout_constraintTop_toBottomOf="@+id/user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

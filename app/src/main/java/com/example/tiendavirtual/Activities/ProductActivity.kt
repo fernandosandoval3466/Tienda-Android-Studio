@@ -9,33 +9,25 @@ import com.example.tiendavirtual.R
 import com.example.tiendavirtual.databinding.ActivityProductlistBinding
 
 class ProductActivity : AppCompatActivity() {
-    private var productos = emptyArray<String>()
-    lateinit var adapter: ArrayAdapter<String>
-    private lateinit var binding: ActivityProductlistBinding
-    var btn_shop = findViewById<Button>(R.id.shop)
-
-
+    private var productos = ArrayList<String>()
+    lateinit var arrayAdapter: ArrayAdapter<*>
+    lateinit var binding: ActivityProductlistBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_productlist)
         binding = ActivityProductlistBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        btn_shop.setOnClickListener {
-             val intent = Intent(this, ShoppingcartActivity::class.java)
-             startActivity(intent)
-             finish()
-         }
 
-                 val productos = arrayOf(
-                     "Producto 1",
-                     "Producto 2",
-                     "Producto 3",
-                     "Producto 4",
-                     "Producto 5"
-                 )
+        val productos = arrayOf("producto 1",
+                "producto 2", "producto 3", "producto 4", "producto 5", "producto 6", "producto 7", "producto 8", "producto 9", "producto 10")
+        var itemAdapter = ArrayAdapter(ProductActivity@this, android.R.layout.simple_list_item_1, productos)
+        binding.listap.adapter = itemAdapter
+        /*binding.Cart.setOnClickListener(
+            {
+                startActivity(Intent(this, ShoppingcartActivity::class.java))
+                finish()
+            }
+        )*/
 
-                 var ItemAdapter = ArrayAdapter<String>(ProductActivity@this, android.R.layout.simple_list_item_1, productos)
-                 binding.ListaProductos.adapter = ItemAdapter
     }
 }

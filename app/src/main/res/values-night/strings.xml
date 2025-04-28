@@ -3,4 +3,5 @@
     <string name="Password">Contraseña</string>
     <string name="iniciar_con_google">Iniciar con Google</string>
     <string name="Config">Configuración</string>
+    <string name="salir">salir</string>
 </resources>
