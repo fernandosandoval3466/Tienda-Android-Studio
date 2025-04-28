@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        var btn_1 = findViewById<Button>(R.id.btn_1)
+        val btn_1 = findViewById<Button>(R.id.btn_1)
         btn_1.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
