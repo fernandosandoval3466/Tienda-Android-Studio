@@ -6,64 +6,58 @@
     android:layout_height="wrap_content"
     android:background="@color/blue">
 
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="403dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="612dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageButton
+        android:id="@+id/regresar"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salir" />
+
+    <ImageButton
+        android:id="@+id/configuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/Config"
+        app:layout_constraintBottom_toTopOf="@+id/listap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:srcCompat="@android:drawable/ic_menu_manage" />
 
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue1"
-            android:text="Usuario"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:icon="@drawable/btn_user"
-            app:iconTint="@color/black" />
-
-        <Button
-            android:id="@+id/Config"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue1"
-            android:text="config"
-            android:textColor="@color/black"
-            app:icon="@android:drawable/ic_menu_preferences"
-            app:iconTint="@color/black" />
-
-        <Button
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            app:icon="@drawable/salir"
-            app:iconTint="@color/red"
-            tools:text="@string/salir"/>
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/user2"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_user" />
 
     <ListView
         android:id="@+id/listap"
-        android:layout_width="409dp"
-        android:layout_height="610dp"
+        android:layout_width="413dp"
+        android:layout_height="647dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LinearLayout1" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

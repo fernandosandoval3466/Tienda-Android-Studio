@@ -6,52 +6,48 @@
     android:layout_height="match_parent"
     android:background="@color/blue">
 
-    <Button
-        android:id="@+id/user"
-        android:layout_width="137dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="283dp"
-        android:layout_marginBottom="658dp"
-        android:backgroundTint="@color/blue1"
-        android:text="@string/usuario"
-        android:textColor="@color/black"
-        app:icon="@drawable/btn_user"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/Cart"
-        android:layout_width="137dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="658dp"
-        android:backgroundTint="@color/blue1"
-        android:text="@string/carrito"
-        android:textColor="@color/black"
-        app:icon="@drawable/shoplist"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ListView
         android:id="@+id/listap"
         android:layout_width="409dp"
         android:layout_height="654dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user" />
+
+    <ImageButton
+        android:id="@+id/user"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="usuario"
+        app:layout_constraintStart_toEndOf="@+id/Cart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_user" />
+
+    <ImageButton
+        android:id="@+id/Cart"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="carrito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shoplist" />
+
+    <SearchView
+        android:layout_width="383dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:voiceIcon="@android:drawable/ic_btn_speak_now"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
