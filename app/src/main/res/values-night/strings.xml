@@ -4,4 +4,5 @@
     <string name="iniciar_con_google">Iniciar con Google</string>
     <string name="Config">Configuración</string>
     <string name="salir">salir</string>
+    <string name="descripcion_lista_productos">Producto</string>
 </resources>

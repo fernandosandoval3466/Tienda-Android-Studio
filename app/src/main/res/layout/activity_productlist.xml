@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/blue">
 
-    <ListView
-        android:id="@+id/listap"
-        android:layout_width="409dp"
-        android:layout_height="654dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:contentDescription="@string/carrito"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintTop_toBottomOf="@+id/Busqueda"
+        app:srcCompat="@drawable/shoplist" />
 
     <ImageButton
         android:id="@+id/user"
-        android:layout_width="69dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
         android:backgroundTint="@color/blue"
-        android:contentDescription="usuario"
-        app:layout_constraintStart_toEndOf="@+id/Cart"
-        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Busqueda"
         app:srcCompat="@drawable/btn_user" />
 
-    <ImageButton
-        android:id="@+id/Cart"
-        android:layout_width="66dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:backgroundTint="@color/blue"
-        android:contentDescription="carrito"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shoplist" />
+    <ListView
+        android:id="@+id/listap"
+        android:layout_width="386dp"
+        android:layout_height="528dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <SearchView
-        android:layout_width="383dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="8dp"
-        android:voiceIcon="@android:drawable/ic_btn_speak_now"
-        app:layout_constraintBottom_toTopOf="@+id/user"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:id="@+id/Busqueda"
+        android:layout_width="327dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

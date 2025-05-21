@@ -22,7 +22,7 @@ class ProductActivity : AppCompatActivity() {
                 "producto 2", "producto 3", "producto 4", "producto 5", "producto 6", "producto 7", "producto 8", "producto 9", "producto 10")
         var itemAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, productos)
         binding.listap.adapter = itemAdapter
-        binding.Cart.setOnClickListener(
+        binding.cart.setOnClickListener(
             {
                 startActivity(Intent(this, ShoppingcartActivity::class.java))
                 finish()

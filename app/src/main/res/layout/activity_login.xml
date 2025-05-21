@@ -91,7 +91,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/IniciarSesion_Google"
+            android:id="@+id/Btn_Google"
             android:layout_width="271dp"
             android:layout_height="56dp"
             android:backgroundTint="@color/white"
@@ -110,7 +110,7 @@
             tools:layout_editor_absoluteY="519dp" />
 
         <Button
-            android:id="@+id/btnlogin"
+            android:id="@+id/Btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue1"

@@ -2,7 +2,7 @@
     <string name="fernando_sandoval">Fernando Sandoval</string>
     <string name="appname">TechnoShop</string>
     <string name="mensaje_inicio">Una tienda en la palma de tu mano.</string>
-    <string name="Comenzar">Vamos!</string>
+    <string name="Comenzar">Empecemos</string>
     <string name="Correo">Correo electrónico</string>
     <string name="Btn_iniciar">Iniciar sesión</string>
     <string name="registrate">Registrate</string>
@@ -17,4 +17,5 @@
     <string name="usuario">User</string>
     <string name="carrito">Carrito</string>
     <string name="salir">salir</string>
+    <string name="descripcion_lista_productos">Producto</string>
 </resources>

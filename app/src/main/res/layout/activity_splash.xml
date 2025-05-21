@@ -37,15 +37,14 @@
          tools:layout_editor_absoluteX="126dp"
          tools:layout_editor_absoluteY="333dp" />
 
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/green"
-        android:text="@string/Comenzar"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="475dp"
-        />
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue1"
+            android:text="@string/Comenzar"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="475dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

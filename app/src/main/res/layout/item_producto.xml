@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:gravity="fill"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Producto"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/Nombre_Producto"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Precio_Producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$0.000"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_botones"
+            android:layout_width="379dp"
+            android:layout_height="149dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Producto">
+
+            <ImageButton
+                android:id="@+id/Cart"
+                android:layout_width="66dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="@color/blue"
+                android:contentDescription="carrito"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shoplist" />
+
+            <ImageButton
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/blue"
+                android:contentDescription="usuario"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@+id/Cart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_user" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
