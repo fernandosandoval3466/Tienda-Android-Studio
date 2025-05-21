@@ -12,14 +12,13 @@ class ProductActivity : AppCompatActivity() {
     private var productos = ArrayList<String>()
     lateinit var arrayAdapter: ArrayAdapter<*>
     private lateinit var binding: ActivityProductlistBinding
-
+    private lateinit var AddProduct: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProductlistBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val productos = arrayOf("producto 1",
-                "producto 2", "producto 3", "producto 4", "producto 5", "producto 6", "producto 7", "producto 8", "producto 9", "producto 10")
+        val productos = arrayOf("producto 1","producto 2", "producto 3")
         var itemAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, productos)
         binding.listap.adapter = itemAdapter
         binding.cart.setOnClickListener(
@@ -28,7 +27,6 @@ class ProductActivity : AppCompatActivity() {
                 finish()
             }
         )
-
 
     }
 }
